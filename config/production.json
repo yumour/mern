@@ -1,0 +1,4 @@
+{
+  "mangoURI": "mongodb+srv://user123:user123@cluster0.exmgw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtsecret": "mydemotoken"
+}
