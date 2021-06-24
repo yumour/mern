@@ -4,11 +4,11 @@ import Moment from "react-moment";
 
 const Education = ({ education }) => {
   return (
-    <div class="profile-educ bg-white p-2">
-      <h2 class="text-primary">Education</h2>
+    <div className="profile-educ bg-white p-2">
+      <h2 className="text-primary">Education</h2>
       {education.map((educ) => (
         <div key={educ._id}>
-          <h3 class="text-dark">educ.school</h3>
+          <h3 className="text-dark">educ.school</h3>
           <p>
             <Moment format="YYYY/MM/DD">{educ.from}</Moment> -{" "}
             {educ.current ? (

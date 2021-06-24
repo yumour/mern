@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 const Posts = ({ posts }) => {
   return (
     <>
-      <div class="profile-github">
-        <h2 class="text-primary my-1">
-          <i class="fab fa-github"></i> Projects
+      <div className="profile-github">
+        <h2 className="text-primary my-1">
+          <i className="fab fa-github"></i> Projects
         </h2>
         {posts.map((post) => (
-          <div class="repo bg-white p-1 my-1" key={post.number}>
+          <div className="repo bg-white p-1 my-1" key={post.number}>
             <div>
               <h4>
                 <Link to={`post/${post.number}`}>{post.title}</Link>

@@ -19,7 +19,7 @@ const Education = ({ education, deleteEduc }) => {
         </thead>
         <tbody>
           {education.map((educ) => (
-            <tr>
+            <tr key={educ._id}>
               <td>{educ.school}</td>
               <td className="hide-sm">{educ.degree}</td>
               <td className="hide-sm">

@@ -50,9 +50,9 @@ const Dashboard = ({
           </div>
           <Experience exprience={profile.exprience} />
           <Education education={profile.education} />
-          <div class="my-2">
-            <button class="btn btn-danger" onClick={() => deleteAcc()}>
-              <i class="fas fa-user-minus"></i>
+          <div className="my-2">
+            <button className="btn btn-danger" onClick={() => deleteAcc()}>
+              <i className="fas fa-user-minus"></i>
               Delete My Account
             </button>
           </div>

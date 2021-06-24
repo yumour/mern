@@ -51,7 +51,7 @@ const Navbar = ({ logout, auth: { isAuthenticated, loading, user } }) => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i class="fas fa-home"></i>ContraConnector
+          <i className="fas fa-home"></i>ContraConnector
         </Link>
       </h1>
       {!loading && <>{isAuthenticated && user ? userLinks : guestLinks}</>}

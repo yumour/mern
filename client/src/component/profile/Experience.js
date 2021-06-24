@@ -4,11 +4,11 @@ import Moment from "react-moment";
 
 const Experience = ({ exprience }) => {
   return (
-    <div class="profile-exp bg-white p-2">
-      <h2 class="text-primary">Experience</h2>
+    <div className="profile-exp bg-white p-2">
+      <h2 className="text-primary">Experience</h2>
       {exprience.map((exp) => (
         <div key={exp._id}>
-          <h3 class="text-dark">exp.company</h3>
+          <h3 className="text-dark">exp.company</h3>
           <p>
             <Moment format="YYYY/MM/DD">{exp.from}</Moment> -{" "}
             {exp.current ? (

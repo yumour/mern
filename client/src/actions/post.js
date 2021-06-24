@@ -301,7 +301,7 @@ export const addPost = (post, history) => async (dispatch) => {
     });
     const res = await axios.post(`/api/post`, post);
     await axios.put(`/api/user/${post.contractor}`, {
-      text: "project ${res.data.title} has been added in ur name",
+      text: `project ${res.data.title} has been added in ur name`,
       post: res.data._id,
     });
     dispatch({

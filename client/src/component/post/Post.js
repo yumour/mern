@@ -210,9 +210,9 @@ const Post = ({
           </div>
 
           {(user._id === creator._id || user._id === contractor) && (
-            <div class="form-group bg-light">
+            <div className="form-group bg-light">
               <form
-                class="d-flex d-sm-flex  flex-wrap justify-content-start align-items-sm-start"
+                className="d-flex d-sm-flex  flex-wrap justify-content-start align-items-sm-start"
                 onSubmit={(e) => {
                   e.preventDefault();
                   addCost(_id, costForm);
@@ -220,7 +220,7 @@ const Post = ({
               >
                 <input
                   type="text"
-                  class="border rounded-0 border-dark shadow"
+                  className="border rounded-0 border-dark shadow"
                   name="activity"
                   placeholder=" Acitivity"
                   value={costForm.activity}
@@ -230,7 +230,7 @@ const Post = ({
                 />
                 <input
                   type="number"
-                  class="border rounded border-dark shadow "
+                  className="border rounded border-dark shadow "
                   required
                   name="amount"
                   min="0"
@@ -241,7 +241,7 @@ const Post = ({
                   }
                 />
                 <button
-                  class="btn bg-primary btn-outline-primary text-right float-right align-self-center flex-grow"
+                  className="btn bg-primary btn-outline-primary text-right float-right align-self-center flex-grow"
                   type="submit"
                 >
                   Add
@@ -297,9 +297,9 @@ const Post = ({
           </div>
 
           {(user._id === creator._id || user._id === contractor) && (
-            <div class="form-group bg-light">
+            <div className="form-group bg-light">
               <form
-                class="d-flex d-sm-flex flex-wrap justify-content-start align-items-sm-start"
+                className="d-flex d-sm-flex flex-wrap justify-content-start align-items-sm-start"
                 onSubmit={(e) => {
                   e.preventDefault();
                   addFinnance(_id, finForm);
@@ -307,7 +307,7 @@ const Post = ({
               >
                 <input
                   type="text"
-                  class="border rounded-0 border-dark shadow"
+                  className="border rounded-0 border-dark shadow"
                   name="activity"
                   placeholder=" Source"
                   value={finForm.activity}
@@ -317,7 +317,7 @@ const Post = ({
                 />
                 <input
                   type="number"
-                  class="border rounded border-dark shadow"
+                  className="border rounded border-dark shadow"
                   required
                   name="amount"
                   min="0"
@@ -328,7 +328,7 @@ const Post = ({
                   }
                 />
                 <button
-                  class="btn bg-primary btn-outline-primary flex-grow text-right float-right align-self-center"
+                  className="btn bg-primary btn-outline-primary flex-grow text-right float-right align-self-center"
                   type="submit"
                 >
                   Add
@@ -375,9 +375,9 @@ const Post = ({
           </div>
 
           {(user._id === creator._id || user._id === contractor) && (
-            <div class="form-group bg-light">
+            <div className="form-group bg-light">
               <form
-                class="d-flex d-sm-flex flex-wrap justify-content-start align-items-sm-start"
+                className="d-flex d-sm-flex flex-wrap justify-content-start align-items-sm-start"
                 onSubmit={(e) => {
                   e.preventDefault();
                   addSchedule(_id, scheduleForm);
@@ -385,7 +385,7 @@ const Post = ({
               >
                 <input
                   type="text"
-                  class="border rounded-0 border-dark shadow"
+                  className="border rounded-0 border-dark shadow"
                   name="activity"
                   placeholder=" Acitivity"
                   value={scheduleForm.activity}
@@ -398,7 +398,7 @@ const Post = ({
                 />
                 <input
                   type="date"
-                  class="border rounded border-dark shadow"
+                  className="border rounded border-dark shadow"
                   required
                   name="amount"
                   placeholder=" Amount"
@@ -411,7 +411,7 @@ const Post = ({
                   }
                 />
                 <button
-                  class="btn bg-primary btn-outline-primary flex-grow text-right float-right align-self-center"
+                  className="btn bg-primary btn-outline-primary flex-grow text-right float-right align-self-center"
                   type="submit"
                 >
                   Add

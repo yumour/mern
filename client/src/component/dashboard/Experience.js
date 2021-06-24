@@ -18,7 +18,7 @@ const Experience = ({ exprience, deleteExp }) => {
         </thead>
         <tbody>
           {exprience.map((exp) => (
-            <tr>
+            <tr key={exp._id}>
               <td>{exp.company}</td>
               <td className="hide-sm">{exp.title}</td>
               <td className="hide-sm">

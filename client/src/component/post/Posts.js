@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Spinner from "../Layout/Spinner";
 import { getAllPosts } from "../../actions/post";
-import { Link, Redirect, withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import PostItem from "./PostItem";
 const Posts = ({ getAllPosts, posts, loading, history }) => {
   useEffect(() => {
